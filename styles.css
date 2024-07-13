@@ -1,0 +1,222 @@
+/* Importar fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;1,500&family=Poppins&family=Young+Serif&display=swap');
+
+/* Importar animaciones*/
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+body
+{
+	background-color: #20232A;
+}
+header {
+    text-align: center;
+    background-color: #45474C;
+    color: #fff;
+    padding: 1px 0;
+}
+header h1 
+{
+   font-size: 70px;
+   font-family: 'Chakra Petch', sans-serif;
+   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.intro
+{
+	font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+h2
+{
+	font-size: 45px;
+    color: #fff;
+    text-align: justify;
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: underline;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+p
+{
+	font-size: 30px;
+    color: #fff;
+    text-align: justify;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+ul 
+{
+	font-size: 25px;
+    color: #fff;
+    text-align: justify;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+/* Estilo del bloque de código */
+.codigo-ejemplo {
+    background-color: #272822; /* Fondo oscuro */
+    color: #F8F8F2; /* Texto claro */
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+    display: inline-block; /* Hace que el bloque se ajuste al contenido */
+}
+
+/* Resaltar palabras clave */
+.codigo-ejemplo code {
+    color: #66D9EF; /* Color para palabras clave */
+    font-weight: bold;
+}
+
+div
+{
+	display: grid;
+    place-items: center;
+}
+.img_vb
+{
+	width: 950px;
+	height: auto;
+}
+.despedida
+{
+	font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.despedida_2
+{
+	font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.despedida_3
+{
+	font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.btn {
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #45474C;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    -webkit-animation: rotate-in-2-cw 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-in-2-cw 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.btn:hover {
+    background-color: black;
+}

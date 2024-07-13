@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="apple-icon-120x120.png" type="image/x-icon"> <!-- Para navegadores antiguos -->
+    <link rel="shortcut icon" href="apple-icon-120x120.png" type="image/x-icon"> <!-- Para navegadores modernos -->
+	<title>¿De que va la carrera?</title>
+</head>
+<body>
+<header>
+        <h1>¿De que va la carrera?</h1>
+</header>
+<h1 class="intro">En la carrera de Bachillerato en Computación verás diversos temas, desde las bases de la programación hasta algo tan complejo como crear una aplicación de escritorio o incluso una app, entre otros temas diversos.</h1>
+<hr>
+<h2>Bases de la programación con PSeInt</h2>
+<p>PSeInt es un entorno de desarrollo y un seudolenguaje de programación utilizado principalmente para aprender los fundamentos de la programación y la lógica de la computación</p>
+<p>En esta área aprenderás:</p>
+<ul>
+    <li>Lógica para programar</li>
+    <li>Declarar variables</li>
+    <li>Saber cómo funciona la programación con sintaxis en español</li>
+    <li>Saber el funcionamiento de cada función, clase y evento.</li>
+</ul>
+<p>Un ejemplo de este seudolenguaje es el siguiente:</p>
+<div>
+<pre class="codigo-ejemplo">
+<code>
+Proceso Suma
+    Definir num1, num2, res Como Entero;
+    Escribir "Ingrese Dos numeros para sumas";
+    Escribir "Numero 1";
+    Leer num1;
+    Escribir "Numero 2";
+    Leer num2;
+    res <- num1 + num2;
+    Escribir "su resultado es: ", res;
+FinProceso
+</code>
+</pre>
+</div>
+<p>Este codigo le pide al usuario dos números e imprime el resultado en un mensaje :D</p>
+<div>
+<img src="sdeas.png">
+</div>
+<h2>Programación con Lenguajes formales</h2>
+<p>Esto es el comienzo del camino del programador; después de dominar PSeInt, nos pasaremos a un lenguaje de programación formal, como C++ y C#.</p>
+<div>
+    <pre class="codigo-ejemplo">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+
+using namespace std;
+
+int main() {
+    int opcion;
+
+    do {
+        cout &lt;&lt; "MENU DE OPCIONES" &lt;&lt; endl;
+        cout &lt;&lt; "1. Calcular promedio" &lt;&lt; endl;
+        cout &lt;&lt; "2. Calcular edad" &lt;&lt; endl;
+        cout &lt;&lt; "3. Calcular IGSS y IRTRA" &lt;&lt; endl;
+        cout &lt;&lt; "4. Salir" &lt;&lt; endl;
+        cout &lt;&lt; "Ingrese su opcion: ";
+        cin &gt;&gt; opcion;
+
+        switch (opcion) {
+            case 1: {
+                float clase1, clase2, clase3, promedio;
+                cout &lt;&lt; "Ingrese la nota de la primera clase: " &lt;&lt; endl;
+                cin &gt;&gt; clase1;
+                cout &lt;&lt; "Ingrese la nota de la segunda clase: " &lt;&lt; endl;
+                cin &gt;&gt; clase2;
+                cout &lt;&lt; "Ingrese la nota de la tercera clase: " &lt;&lt; endl;
+                cin &gt;&gt; clase3;
+                promedio = (clase1 + clase2 + clase3) / 3;
+                cout &lt;&lt; "El promedio es: " &lt;&lt; round(promedio) &lt;&lt; endl;
+                break;
+            }
+            case 2: {
+                float actual, nacimiento, edad;
+                cout &lt;&lt; "Ingrese el año actual: ";
+                cin &gt;&gt; actual;
+                cout &lt;&lt; "Ingrese su año de nacimiento: ";
+                cin &gt;&gt; nacimiento;
+                edad = actual - nacimiento;
+                cout &lt;&lt; "Usted tiene " &lt;&lt; edad &lt;&lt; " años." &lt;&lt; endl;
+                break;
+            }
+            case 3: {
+                float sueldo, igss, irtra;
+                cout &lt;&lt; "Ingrese su sueldo: " &lt;&lt; endl;
+                cin &gt;&gt; sueldo;
+                igss = sueldo * 0.0483;
+                irtra = sueldo * 0.01;
+                cout &lt;&lt; "Debe pagar " &lt;&lt; igss &lt;&lt; " de IGSS y " &lt;&lt; irtra &lt;&lt; " de IRTRA." &lt;&lt; endl;
+                break;
+            }
+            default:
+                break;
+        }
+    } while (opcion != 4);
+
+    return 0;
+}
+</code>
+</pre>
+</div>
+<p>Este codigo ejecuta una serie de programas q hacen diferentes acciones tales como:</p>
+<ul>
+    <li>Calcular Promedios de 3 clases</li>
+    <li>Calcular Edad</li>
+    <li>Calcular Iggs e IRTRA de tu sueldo</li>
+</ul>
+<div>
+<img src="c-xd.png">
+</div>
+<h2>Creando Programas</h2>
+<p>Una vez que dominemos C++, empezaremos a estudiar la programación orientada a objetos. ¿Qué significa esto? Pues que aprenderemos cómo crear programas para computadora y, más adelante, aplicaciones móviles. ¡Increíble!</p>
+<p>Para lograrlo, utilizaremos Visual Studio, que es un IDE (Entorno de Desarrollo Integrado). Con él, podremos crear programas para computadoras utilizando C# o incluso Visual Basic (que es muy sencillo con Visual Basic :D). Aquí tienes un ejemplo:</p>
+<div>
+	<img class="img_vb" src="wls.png">
+</div>
+<p>Este es un programa que resuelve ecuaciones cuadráticas. ¡Y lo mejor es que puedes distribuirlo en formato .exe, que es el formato común para programas de PC! ¡Increíble!</p>
+<h2>Desarrollo Web!</h2>
+<p>Cuando estés en el último año de la carrera, te enseñaremos a crear páginas web, como la que estás viendo ahora mismo. ;D</p>
+<p>Las páginas web se crean utilizando varios lenguajes y tecnologías. HTML sirve como la base de la estructura de la página, CSS se encarga de la apariencia y el diseño (¡la belleza de la página! :D), mientras que JavaScript se utiliza para crear la lógica y la interacción en la página web.</p>
+<p>Para crear páginas web, es común utilizar editores de código como Visual Studio Code o Sublime Text. Estos dos son editores de código populares en la comunidad de desarrollo web. yo cree esta página con sublime text ;D</p>
+<h2>Computacion y Robotica</h2>
+<p>También tendremos áreas complementarias para la carrera, como la ofimática, que incluye el dominio del paquete de Office.</p>
+<ul>
+    <li>Word</li>
+    <li>Excel</li>
+    <li>Acces (base de datos)</li>
+</ul>
+<p>También fomentamos la electrónica y la robótica. Mis compañeros han creado algunos proyectos. :D</p>
+<div>
+	<img src="collage.png">
+</div>
+<p class="despedida">Gracias por acompañarme en este viaje. Ahora conoces algunas de las maravillas de la tecnología y la programación. ¡En el Colegio Cristiano Torricelli, tenemos todo esto y más!</p>
+<p class="despedida_2">"¿Quieres formar parte de los bachilleres en Computación?</p>
+<p class="despedida_3">¿Quieres formar parte de la familia? ¡La familia Torricelli!</p>
+<a class="btn" href="https://www.colegiotorricelli.edu.gt/index.php/es/">Agenda tu Entrevista</a>
+</body>
+</html>
